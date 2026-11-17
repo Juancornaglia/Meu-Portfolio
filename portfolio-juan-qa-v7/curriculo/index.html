@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo | Juan Carlos Zapata Cornaglia — Analista de QA</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='28'%3EJC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e17;
+      --paper: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+      padding: 1.5rem 1rem 3rem;
+    }
+    .toolbar {
+      max-width: 860px;
+      margin: 0 auto 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .toolbar a, .toolbar button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.6rem 1.1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: #111827;
+      color: #f1f5f9;
+    }
+    .toolbar .btn-accent {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      color: #ffffff;
+      border: none;
+    }
+    .paper {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--paper);
+      border-radius: 14px;
+      padding: 2.75rem 3rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+    .cv-header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .cv-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      margin: 0 0 0.25rem;
+      font-size: 1.95rem;
+      color: var(--ink);
+    }
+    .cv-role {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 1.05rem;
+      margin: 0 0 0.65rem;
+    }
+    .cv-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+    .cv-contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin: 0 0 0.75rem;
+    }
+    p { margin: 0 0 0.65rem; font-size: 0.93rem; }
+    ul { margin: 0.35rem 0 0.75rem; padding-left: 1.2rem; font-size: 0.92rem; }
+    li { margin-bottom: 0.3rem; }
+    .skills-cols {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 0.96rem;
+    }
+    .item-sub {
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-bottom: 0.4rem;
+    }
+    @media (max-width: 680px) {
+      .paper { padding: 1.75rem 1.35rem; }
+      .skills-cols { grid-template-columns: 1fr; }
+    }
+    @media print {
+      body { background: #ffffff; padding: 0; }
+      .toolbar { display: none; }
+      .paper { box-shadow: none; padding: 0; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html">← Voltar ao Portfólio</a>
+    <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
+      <button type="button" class="btn-accent" onclick="window.print()">🖨️ Imprimir / Salvar como PDF</button>
+      <a href="https://wa.me/5511925318963?text=Ol%C3%A1%20Juan%20Carlos!%20Vi%20seu%20curr%C3%ADculo%20online%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
+    </div>
+  </div>
+
+  <article class="paper">
+    <header class="cv-header">
+      <h1>Juan Carlos Zapata Cornaglia</h1>
+      <p class="cv-role">Analista de Garantia da Qualidade de Software (QA) · QA Júnior / Tester</p>
+      <div class="cv-contact">
+        <span>📍 Vila Prudente, São Paulo - SP (21 anos)</span>
+        <span>📱 <a href="https://wa.me/5511925318963" target="_blank" rel="noopener">(11) 92531-8963</a></span>
+        <span>✉️ <a href="mailto:juancornaglia00@gmail.com">juancornaglia00@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/juan-carlos-44854a197/" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/Juancornaglia" target="_blank" rel="noopener">GitHub</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Resumo Profissional</h2>
+      <p>
+        Graduado em <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> pelo Centro Universitário FAM, com foco em <strong>Garantia da Qualidade de Software (QA)</strong>. Experiência prática no ciclo completo de testes — planejamento, escrita de cenários BDD (Gherkin), testes manuais, funcionais, exploratórios e regressivos, automação E2E (Cypress), validação de APIs RESTful (Postman/Newman/Swagger) e auditoria de integridade em bancos de dados relacionais (Oracle/PLSQL, PostgreSQL e MySQL).
+      </p>
+    </section>
+
+    <section>
+      <h2>Competências Técnicas</h2>
+      <div class="skills-cols">
+        <div>
+          <p><strong>Qualidade &amp; Testes:</strong> ISO/IEC 25010, Plano e Casos de Teste, Testes Manuais, Funcionais, Exploratórios, Smoke e Regressão, BDD/Gherkin, Gestão de Defeitos (Jira).</p>
+          <p><strong>Automação &amp; APIs:</strong> Cypress (JavaScript), Pytest, Postman, Newman CLI, Swagger/OpenAPI, Chrome DevTools.</p>
+        </div>
+        <div>
+          <p><strong>Bancos de Dados:</strong> Oracle Database, PL/SQL, PostgreSQL, MySQL, Modelagem MER/DER (brModelo), Queries SQL de validação.</p>
+          <p><strong>Desenvolvimento &amp; Ágil:</strong> Lógica de Programação, Java (OO), C, C++, Python (Flask &amp; IoT), PHP, HTML5, CSS3, JavaScript, Git/GitHub, Scrum/Kanban.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experiência em Projetos &amp; QA</h2>
+      <div class="item-head">
+        <span>Analista de QA &amp; Desenvolvedor Full-Stack — Projeto Regia &amp; Tinas Care (TCC)</span>
+        <span>2026</span>
+      </div>
+      <div class="item-sub">Sistema Web Real em Produção · São Paulo, SP · <a href="https://regia-tinas.onrender.com/" target="_blank" rel="noopener" style="color:var(--accent);">regia-tinas.onrender.com</a></div>
+      <ul>
+        <li>Planejamento e execução de suítes de testes funcionais, exploratórios, smoke e regressivos em ambiente de homologação e produção para sistema multi-lojas de pet shop.</li>
+        <li>Modelagem conceitual e lógica do banco de dados no brModelo e implementação em PostgreSQL, garantindo integridade referencial entre lojas, estoque, agendamentos, pets e funcionários.</li>
+        <li>Elaboração de cenários em BDD (Gherkin), validação de rotas REST e avaliação de qualidade conforme a norma ISO/IEC 25010.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Formação Acadêmica</h2>
+      <div class="item-head">
+        <span>Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)</span>
+        <span>Concluído em 2026</span>
+      </div>
+      <div class="item-sub">Centro Universitário das Américas (FAM) · São Paulo, SP</div>
+      <p>Participação ativa na organização e suporte técnico do projeto extensionista de responsabilidade social da instituição.</p>
+    </section>
+
+    <section>
+      <h2>Certificações</h2>
+      <ul>
+        <li><strong>Postman: Testes de API na Prática — Fundamentos Essenciais</strong> · Udemy (Nov 2026 · 6.5h)</li>
+        <li><strong>Guia em Testes de Software: Teoria e Prática + ChatGPT</strong> · Udemy (Out 2026 · 4h)</li>
+        <li><strong>Teste de Software: Seja um Expert e Impulsione Sua Carreira</strong> · Udemy (Out 2026 · 3h)</li>
+        <li><strong>Formação Inteligência Artificial: Do Zero ao Avançado</strong> · Udemy (Nov 2026)</li>
+        <li><strong>Introduction to IoT</strong> · Cisco Networking Academy (2024)</li>
+        <li><strong>Metodologias Ágeis, C# Orientado a Objetos &amp; Programação Python</strong> · Certificações Complementares (2026)</li>
+      </ul>
+    </section>
+  </article>
+</body>
+</html>

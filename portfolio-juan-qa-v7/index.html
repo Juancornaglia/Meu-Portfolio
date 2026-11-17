@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Carlos | Quality Assurance</title>
+  <meta name="description" content="Portfólio de Juan Carlos Zapata Cornaglia — Analista de Garantia da Qualidade de Software (QA) com base sólida em Lógica de Programação, Oracle/PLSQL, PostgreSQL/MySQL, PHP, Java OO, C/C++, Python (IoT & Flask) e Automação E2E/API.">
+  <meta name="theme-color" content="#0A0E17">
+
+  <!-- Favicon com o ícone JC -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%23818cf8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='800' font-size='28'%3EJC%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__badge">JC</span>
+        <span class="logo__text">Juan Carlos</span>
+      </a>
+
+      <nav class="nav" id="nav-menu" aria-label="Menu principal">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#arquitetura-qa" class="nav__link">Como Testo</a>
+        <a href="#stack" class="nav__link">Conhecimentos</a>
+        <a href="#case-tcc" class="nav__link">Projeto Real</a>
+        <a href="certificados.html" class="nav__link nav__link--highlight">Certificações</a>
+        <a href="curriculo.html" class="nav__link nav__link--highlight">Currículo</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Alternar tema claro ou escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"></path></svg>
+        </button>
+        <a href="https://wa.me/5511925318963?text=Ol%C3%A1%20Juan%20Carlos!%20Vi%20seu%20portf%C3%B3lio%20de%20QA%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="btn btn--sm btn--primary hide-mobile">
+          Falar comigo
+        </a>
+        <button type="button" class="burger" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir navegação">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="progress-bar" id="scroll-progress"></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="inicio">
+      <div class="hero__grid">
+        <!-- Coluna Esquerda -->
+        <div class="hero__main reveal">
+          <div class="brand-hero">
+            <span class="logo__badge logo__badge--lg">JC</span>
+            <div>
+              <span class="brand-hero__name">Juan Carlos Zapata Cornaglia</span>
+              <span class="brand-hero__role">Analista de Qualidade de Software <em class="qa-pill">QA</em></span>
+            </div>
+          </div>
+
+          <div class="status-pill">
+            <span class="pulse"></span>
+            Disponível para vagas de <strong>QA Júnior / Analista de Testes</strong> · São Paulo, SP
+          </div>
+
+          <h1 class="hero__title">
+            Garantindo software <span class="gradient-text">confiável, rápido</span> e sem falhas ocultas.
+          </h1>
+
+          <p class="hero__desc">
+            Olá, eu sou <strong>Juan Carlos Zapata Cornaglia</strong> tenho 21 anos, sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong>. Combino pensamento crítico de <strong>Quality Assurance</strong> com domínio técnico em <strong>Lógica de Programação, Bancos de Dados (Oracle/PLSQL, PostgreSQL, MySQL) e Back-end</strong> para investigar defeitos na raiz.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#case-tcc" class="btn btn--primary">
+              Explorar Case Real (Regia &amp; Tinas)
+              <svg viewBox="0 0 24 24" class="btn-icon"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="curriculo.html" class="btn btn--ghost">
+              Visualizar Currículo Online
+            </a>
+          </div>
+
+          <div class="hero__metrics">
+            <div class="metric-box">
+              <span class="metric-box__num">360°</span>
+              <span class="metric-box__label">Validação UI + API + SQL</span>
+            </div>
+            <div class="metric-box">
+              <span class="metric-box__num">ISO 25010</span>
+              <span class="metric-box__label">Qualidade aplicada no TCC</span>
+            </div>
+            <a href="certificados.html" class="metric-box metric-box--link">
+              <span class="metric-box__num">6+ ↗</span>
+              <span class="metric-box__label">Ver Certificados &amp; Diploma</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Foto maior + textos abaixo -->
+        <aside class="hero__card reveal">
+          <div class="profile-card">
+            <div class="profile-card__photo-frame">
+              <img src="assets/img/juan.jpeg" alt="Foto de Juan Carlos Zapata Cornaglia" class="profile-card__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="profile-card__fallback" style="display:none;">JC</div>
+            </div>
+
+            <div class="profile-card__identity">
+              <h2>Juan Carlos Zapata Cornaglia</h2>
+              <p class="profile-card__subtitle">QA Analyst · Análise e Desenvolvimento de Sistemas (FAM)</p>
+              <span class="loc-tag">📍 Vila Prudente · São Paulo, SP</span>
+            </div>
+
+            <div class="profile-card__code">
+              <div class="code-header">
+                <span>qa_inspector.sql</span>
+                <span class="badge-ok">PASS</span>
+              </div>
+              <pre><code><span class="c-kw">SELECT</span> integridade, contrato_api
+<span class="c-kw">FROM</span> qualidade_software
+<span class="c-kw">WHERE</span> bugs_criticos = <span class="c-num">0</span>
+  <span class="c-kw">AND</span> cobertura = <span class="c-str">'E2E + REST + DB'</span>;</code></pre>
+            </div>
+
+            <div class="profile-card__links">
+              <a href="https://github.com/Juancornaglia" target="_blank" rel="noopener" aria-label="GitHub">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/juan-carlos-44854a197/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn ↗</a>
+              <a href="https://regia-tinas.onrender.com/" target="_blank" rel="noopener" aria-label="Site TCC">TCC Live ↗</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ 01. SOBRE MIM (4 PILARES NA DIREITA) ============ -->
+    <section class="section container" id="sobre">
+      <div class="section-head reveal">
+        <span class="kicker">01 // IDENTIDADE &amp; TRAJETÓRIA</span>
+        <h2>Por que minha base de engenharia me torna um QA mais completo</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-story reveal">
+          <p class="lead">
+            Tenho <strong>21 anos</strong>, moro na Vila Prudente em São Paulo (SP) e sou graduado em <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> pelo Centro Universitário FAM. Minha paixão por tecnologia nasceu da curiosidade de abrir sistemas por dentro e entender exatamente como cada regra de negócio, tela e consulta de banco se conectam para entregar uma experiência impecável ao usuário.
+          </p>
+          <p>
+            Diferente de uma abordagem superficial que testa apenas o clique na tela, construí uma base sólida em <strong>lógica de programação</strong>, linguagens estruturadas e orientadas a objetos (<strong>C, C++, Java OO, Python, PHP e JavaScript</strong>) e modelagem avançada de dados (<strong>Oracle Database, PL/SQL, PostgreSQL e MySQL</strong>). Quando encontro um comportamento inesperado, eu consigo ler o código, inspecionar a requisição HTTP e auditar o registro direto na tabela.
+          </p>
+          <p>
+            Coloquei essa visão à prova no desenvolvimento e na garantia de qualidade do <strong>Regia &amp; Tinas Care</strong> — sistema real criado em equipe para uma rede de pet shops e avaliado sob a norma internacional <strong>ISO/IEC 25010</strong>. Participei desde o levantamento de requisitos com os proprietários e modelagem no <strong>brModelo</strong> até a criação de cenários BDD, testes exploratórios de borda e regressões pós-deploy em produção.
+          </p>
+          <p>
+            Também atuei na organização e suporte técnico do projeto extensionista de responsabilidade social da FAM, fortalecendo minha comunicação com usuários reais e trabalho em equipe ágil. Hoje, direciono essa bagagem para times de <strong>Quality Assurance</strong> que buscam alguém analítico, proativo e capaz de unir testes manuais estratégicos, automação E2E/API e auditoria SQL.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="card mini-feature reveal">
+            <div class="mini-feature__icon">01 · INVESTIGAÇÃO PROFUNDA</div>
+            <h3>Análise de Causa Raiz</h3>
+            <p>Não apenas reporto o sintoma: inspeciono Console e Network no DevTools, valido o contrato JSON da API e rodo queries SQL para entregar ao dev o diagnóstico exato do bug.</p>
+          </div>
+          <div class="card mini-feature reveal">
+            <div class="mini-feature__icon">02 · PREVENÇÃO DE DEFEITOS</div>
+            <h3>Visão de Negócio &amp; BDD</h3>
+            <p>Transformo critérios de aceite em cenários Gherkin cobrindo fluxos felizes, exceções, permissões de perfil e valores limite antes mesmo do código ir para produção.</p>
+          </div>
+          <div class="card mini-feature reveal">
+            <div class="mini-feature__icon">03 · ENGENHARIA DE TESTES</div>
+            <h3>Automação &amp; Integridade SQL</h3>
+            <p>Estruturo suítes E2E com Cypress, coleções automatizadas no Postman/Newman e validações em Oracle PL/SQL, PostgreSQL e MySQL.</p>
+          </div>
+          <div class="card mini-feature reveal">
+            <div class="mini-feature__icon">04 · DOCUMENTAÇÃO &amp; RASTREABILIDADE</div>
+            <h3>Casos de Teste, BDD &amp; Bug Reports</h3>
+            <p>Estruturo matrizes de casos de teste, cenários Gherkin legíveis para todo o time e relatórios de defeitos completos com passos de reprodução, evidências visuais e severidade clara.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02. LABORATÓRIO DE QA ============ -->
+    <section class="section container" id="arquitetura-qa">
+      <div class="section-head reveal">
+        <span class="kicker">02 // METODOLOGIA NA PRÁTICA</span>
+        <h2>Como eu valido um sistema de ponta a ponta</h2>
+        <p class="section-sub">Selecione cada camada da arquitetura para ver como aplico testes manuais, automação, APIs e banco de dados.</p>
+      </div>
+
+      <div class="qa-lab card reveal">
+        <div class="qa-lab__tabs" role="tablist" aria-label="Camadas de Teste">
+          <button type="button" class="lab-tab is-active" role="tab" aria-selected="true" data-target="camada-ui">
+            <span class="step-num">01</span> Interface &amp; Exploratório
+          </button>
+          <button type="button" class="lab-tab" role="tab" aria-selected="false" data-target="camada-e2e">
+            <span class="step-num">02</span> Automação E2E (Cypress)
+          </button>
+          <button type="button" class="lab-tab" role="tab" aria-selected="false" data-target="camada-api">
+            <span class="step-num">03</span> Contratos &amp; APIs REST
+          </button>
+          <button type="button" class="lab-tab" role="tab" aria-selected="false" data-target="camada-db">
+            <span class="step-num">04</span> Banco de Dados &amp; PL/SQL
+          </button>
+        </div>
+
+        <div class="qa-lab__body">
+          <!-- Camada 1 -->
+          <div class="lab-panel is-active" id="camada-ui">
+            <div class="lab-panel__text">
+              <h3>Testes Funcionais, Exploratórios e Relato de Bugs</h3>
+              <p>Executo jornadas completas testando entradas inesperadas, valores negativos, campos vazios e responsividade. Todo defeito encontrado é documentado com passos de reprodução, evidência visual, logs de rede e impacto no negócio.</p>
+              <ul class="check-list">
+                <li>Smoke Tests, Testes Funcionais e Regressão pós-deploy</li>
+                <li>Inspeção de requisições HTTP e erros JS via Chrome DevTools</li>
+                <li>Escrita de cenários claros usando BDD / Gherkin</li>
+              </ul>
+            </div>
+            <div class="lab-panel__demo">
+              <div class="demo-box">
+                <div class="demo-box__bar"><span>Relatório de Defeito · Jira</span><span class="badge-danger">Severidade: Alta</span></div>
+                <div class="demo-box__content">
+                  <p><strong>[BUG-108]</strong> Cadastro de produto permite quantidade negativa em estoque</p>
+                  <p class="code-line">Input enviado: <code>quantidade = -5</code> | Esperado: <code>HTTP 400 / Bloqueio UI</code></p>
+                  <p class="code-line">Evidência: Payload capturado + print + query de verificação no banco.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Camada 2 -->
+          <div class="lab-panel" id="camada-e2e" hidden>
+            <div class="lab-panel__text">
+              <h3>Automação Web Ponta a Ponta com Cypress &amp; Pytest</h3>
+              <p>Automatizo fluxos críticos repetitivos — como autenticação por perfil, agendamentos e movimentação de estoque — garantindo agilidade nas entregas sem quebrar funcionalidades existentes.</p>
+              <ul class="check-list">
+                <li>Seletores resilientes e asserções explícitas de estado</li>
+                <li>Testes de fluxos positivos e mensagens de erro obrigatórias</li>
+                <li>Integração com pipelines Git/GitHub</li>
+              </ul>
+            </div>
+            <div class="lab-panel__demo">
+              <div class="demo-box">
+                <div class="demo-box__bar"><span>cypress/e2e/regia_tinas.cy.js</span><span class="badge-ok">4/4 Passing</span></div>
+                <pre class="demo-code"><code><span class="c-ok">✓</span> autentica administrador e carrega unidade Matriz (0.41s)
+<span class="c-ok">✓</span> bloqueia agendamento duplicado no mesmo horário (0.53s)
+<span class="c-ok">✓</span> atualiza saldo de estoque após pedido aprovado (0.62s)
+<span class="c-ok">✓</span> restringe acesso financeiro para perfil operacional (0.38s)</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Camada 3 -->
+          <div class="lab-panel" id="camada-api" hidden>
+            <div class="lab-panel__text">
+              <h3>Validação de APIs RESTful com Postman, Newman &amp; Swagger</h3>
+              <p>Testo a comunicação direta entre cliente e servidor (Back-end Python/Flask e PHP), conferindo status codes, estrutura do JSON, autenticação por token/sessão e tratamento de exceções.</p>
+              <ul class="check-list">
+                <li>Validação de contratos OpenAPI / Swagger</li>
+                <li>Testes orientados a dados (Data-Driven) e variáveis de ambiente</li>
+                <li>Execução automatizada via linha de comando com Newman CLI</li>
+              </ul>
+            </div>
+            <div class="lab-panel__demo">
+              <div class="demo-box">
+                <div class="demo-box__bar"><span>POST /api/v1/agendamentos</span><span class="badge-ok">201 Created · 94ms</span></div>
+                <pre class="demo-code"><code>{
+  "agendamento_id": 219,
+  "unidade": "São Caetano",
+  "servico": "Banho e Tosa",
+  "status": "CONFIRMADO"
+}
+<span class="c-ok">✓ Status Code 201 | ✓ Schema validado | ✓ Tempo &lt; 200ms</span></code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Camada 4 -->
+          <div class="lab-panel" id="camada-db" hidden>
+            <div class="lab-panel__text">
+              <h3>Auditoria de Dados em Oracle PL/SQL, PostgreSQL &amp; MySQL</h3>
+              <p>Com conhecimento sólido em modelagem relacional e programação de banco de dados, valido se cada operação da aplicação respeitou constraints, chaves estrangeiras, triggers e regras de negócio.</p>
+              <ul class="check-list">
+                <li>Consultas complexas com JOINs e subqueries para auditar registros</li>
+                <li>Conhecimento em Oracle Database, blocos PL/SQL, PostgreSQL e MySQL</li>
+                <li>Modelagem conceitual e lógica (MER/DER) no brModelo</li>
+              </ul>
+            </div>
+            <div class="lab-panel__demo">
+              <div class="demo-box">
+                <div class="demo-box__bar"><span>Oracle PL/SQL &amp; PostgreSQL Audit</span><span class="badge-ok">Integridade OK</span></div>
+                <pre class="demo-code"><code><span class="c-kw">SELECT</span> l.nome_loja, p.nome_produto, p.quantidade_estoque
+<span class="c-kw">FROM</span> produto p
+<span class="c-kw">INNER JOIN</span> loja l <span class="c-kw">ON</span> p.id_loja = l.id_loja
+<span class="c-kw">WHERE</span> p.quantidade_estoque &lt; <span class="c-num">0</span>;
+<span class="c-ok">-- Resultado: 0 linhas retornadas (Constraint validada)</span></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03. CONHECIMENTOS & STACK COMPLETA ============ -->
+    <section class="section container" id="stack">
+      <div class="section-head reveal">
+        <span class="kicker">03 // CONHECIMENTOS TÉCNICOS</span>
+        <h2>Minha caixa de ferramentas em QA, Dados e Desenvolvimento</h2>
+        <p class="section-sub">Conhecimentos consolidados na graduação em ADS, certificações e projetos práticos.</p>
+      </div>
+
+      <div class="skills-categories">
+        <div class="card skill-group reveal">
+          <div class="skill-group__head">
+            <span class="group-tag">Qualidade de Software</span>
+            <h3>Testes, Automação &amp; APIs</h3>
+          </div>
+          <div class="badge-grid">
+            <div class="tech-pill"><strong>Qualidade de Software</strong><span>ISO/IEC 25010, Plano e Casos de Teste</span></div>
+            <div class="tech-pill"><strong>Testes Manuais &amp; Exploratórios</strong><span>Smoke, Funcional, Regressão e Borda</span></div>
+            <div class="tech-pill"><strong>Cypress</strong><span>Automação E2E em JavaScript</span></div>
+            <div class="tech-pill"><strong>Postman &amp; Newman</strong><span>Testes e automação CLI de APIs REST</span></div>
+            <div class="tech-pill"><strong>Swagger / OpenAPI</strong><span>Validação de contratos e endpoints</span></div>
+            <div class="tech-pill"><strong>BDD / Gherkin</strong><span>Cenários orientados a comportamento</span></div>
+            <div class="tech-pill"><strong>Pytest &amp; DevTools</strong><span>Automação Python e inspeção Web</span></div>
+            <div class="tech-pill"><strong>Jira &amp; Metodologias Ágeis</strong><span>Scrum, Kanban e gestão de defeitos</span></div>
+          </div>
+        </div>
+
+        <div class="card skill-group reveal">
+          <div class="skill-group__head">
+            <span class="group-tag">Dados &amp; Modelagem</span>
+            <h3>Bancos de Dados &amp; PL/SQL</h3>
+          </div>
+          <div class="badge-grid">
+            <div class="tech-pill"><strong>Oracle Database</strong><span>Arquitetura relacional e consultas</span></div>
+            <div class="tech-pill"><strong>PL/SQL</strong><span>Procedures, functions, triggers e blocos</span></div>
+            <div class="tech-pill"><strong>PostgreSQL</strong><span>Modelagem, constraints e produção</span></div>
+            <div class="tech-pill"><strong>MySQL</strong><span>Bancos relacionais e integração Web</span></div>
+            <div class="tech-pill"><strong>brModelo (MER / DER)</strong><span>Diagramas Conceitual e Lógico</span></div>
+            <div class="tech-pill"><strong>Auditoria SQL</strong><span>Validação de integridade UI vs. Banco</span></div>
+          </div>
+        </div>
+
+        <div class="card skill-group reveal">
+          <div class="skill-group__head">
+            <span class="group-tag">Engenharia &amp; Código</span>
+            <h3>Programação, Web &amp; IoT</h3>
+          </div>
+          <div class="badge-grid">
+            <div class="tech-pill"><strong>Lógica de Programação</strong><span>Algoritmos, estruturas de dados e análise</span></div>
+            <div class="tech-pill"><strong>Java (Orientação a Objetos)</strong><span>Classes, herança, polimorfismo e POO</span></div>
+            <div class="tech-pill"><strong>C &amp; C++</strong><span>Programação estruturada e memória</span></div>
+            <div class="tech-pill"><strong>Python (Back-end &amp; IoT)</strong><span>Flask, scripts e Internet das Coisas</span></div>
+            <div class="tech-pill"><strong>PHP (Back-end &amp; BD)</strong><span>Integração servidor e bancos relacionais</span></div>
+            <div class="tech-pill"><strong>HTML5, CSS3 &amp; JavaScript</strong><span>Front-end responsivo e manipulação DOM</span></div>
+            <div class="tech-pill"><strong>Git &amp; GitHub</strong><span>Controle de versão e repositórios</span></div>
+            <div class="tech-pill"><strong>IA Aplicada</strong><span>ChatGPT, Gemini e Copilot para QA</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04. CASE REAL + GALERIA NA ORDEM PEDIDA ============ -->
+    <section class="section container" id="case-tcc">
+      <div class="section-head reveal">
+        <span class="kicker">04 // PROJETO REAL &amp; EVIDÊNCIAS</span>
+        <h2>Regia &amp; Tinas Care — Do Sistema em Produção à Arquitetura de Dados</h2>
+        <p class="section-sub">Sistema real desenvolvido para uma rede de pet shops, unindo interface responsiva, modelagem de banco de dados e garantia de qualidade.</p>
+      </div>
+
+      <div class="showcase card reveal">
+        <div class="showcase__grid">
+          <div class="showcase__media">
+            <div class="media-viewer">
+              <div class="media-viewer__top">
+                <span id="viewer-title" class="viewer-title">1. Interface Web em Produção (Regia &amp; Tinas Care)</span>
+                <button type="button" class="zoom-btn" id="open-lightbox" title="Ampliar imagem">⤢ Ampliar</button>
+              </div>
+
+              <div class="media-viewer__stage" id="stage-trigger">
+                <img id="viewer-img" src="assets/img/site_regia.png" alt="Interface Web em Produção Regia e Tinas Care">
+              </div>
+
+              <div class="media-thumbs" role="tablist" aria-label="Galeria de evidências do projeto">
+                <button type="button" class="thumb is-active" data-src="assets/img/site_regia.png" data-title="1. Interface Web em Produção (Regia &amp; Tinas Care)">
+                  <img src="assets/img/site_regia.png" alt="Miniatura Sistema Web">
+                  <span>Sistema Web</span>
+                </button>
+                <button type="button" class="thumb" data-src="assets/img/diagrma_conceitual.png" data-title="2. Modelo Conceitual MER (brModelo)">
+                  <img src="assets/img/diagrma_conceitual.png" alt="Miniatura Modelo Conceitual">
+                  <span>Modelo Conceitual</span>
+                </button>
+                <button type="button" class="thumb" data-src="assets/img/diagrama_logico.png" data-title="3. Diagrama Lógico Relacional (brModelo)">
+                  <img src="assets/img/diagrama_logico.png" alt="Miniatura Diagrama Lógico">
+                  <span>Diagrama Lógico</span>
+                </button>
+                <button type="button" class="thumb" data-src="assets/img/git_site.png" data-title="4. Repositório e Estrutura de Código no GitHub">
+                  <img src="assets/img/git_site.png" alt="Miniatura GitHub">
+                  <span>Código GitHub</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase__info">
+            <span class="badge-accent">Case Principal · TCC ADS (FAM)</span>
+            <h3>Arquitetura, Banco de Dados e Testes em Produção</h3>
+            <p>
+              O <strong>Regia &amp; Tinas Care</strong> centraliza a operação de múltiplas unidades de pet shop: controle de estoque individual por loja, agendamentos de banho e tosa, cadastro de pets/tutores, gestão de funcionários e controle de pedidos/fornecedores.
+            </p>
+
+            <div class="deliverables">
+              <div class="deliv-item">
+                <strong>Modelagem &amp; SQL:</strong> Criação dos diagramas Conceitual e Lógico no <em>brModelo</em> e implementação completa em <em>PostgreSQL</em> com chaves primárias, estrangeiras e regras de integridade.
+              </div>
+              <div class="deliv-item">
+                <strong>Garantia de Qualidade (ISO/IEC 25010):</strong> Planejamento de cenários BDD, testes exploratórios de regras de negócio (bloqueio de conflito de horários e estoque) e testes regressivos após cada deploy.
+              </div>
+            </div>
+
+            <div class="tag-row">
+              <span>PostgreSQL</span>
+              <span>SQL</span>
+              <span>brModelo</span>
+              <span>Python (Flask)</span>
+              <span>HTML/CSS/JS</span>
+              <span>Testes E2E</span>
+              <span>ISO/IEC 25010</span>
+            </div>
+
+            <div class="showcase__buttons">
+              <a href="https://regia-tinas.onrender.com/" target="_blank" rel="noopener" class="btn btn--primary">Acessar Site ao Vivo ↗</a>
+              <a href="https://github.com/Juancornaglia/Regia_tinas/tree/main/home" target="_blank" rel="noopener" class="btn btn--ghost">Código Front/Back ↗</a>
+              <a href="https://github.com/Juancornaglia/BANCO_DE_DADOS_FACUL/blob/main/BANCO_DE_DADOS_FACUL.SQL" target="_blank" rel="noopener" class="btn btn--ghost">Script SQL Completo ↗</a>
+            </div>
+
+            <div class="brmodelo-links">
+              <a href="https://app.brmodeloweb.com/publicview/6afba7cd59bb1e9d0a7dbd46" target="_blank" rel="noopener">Abrir Modelo Conceitual Online ↗</a>
+              <span>•</span>
+              <a href="https://app.brmodeloweb.com/publicview/6afba80859bb1e9d0a7dbd5e" target="_blank" rel="noopener">Abrir Diagrama Lógico Online ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05. FORMAÇÃO & CERTIFICAÇÕES ============ -->
+    <section class="section container" id="trajetoria">
+      <div class="section-head reveal">
+        <span class="kicker">05 // FORMAÇÃO &amp; CREDENCIAIS</span>
+        <h2>Base acadêmica e certificações verificáveis</h2>
+        <p class="section-sub">Clique em qualquer certificação abaixo para abrir a página dedicada com a imagem do certificado e o resumo detalhado.</p>
+      </div>
+
+      <a href="certificados.html#cert-faculdade" class="edu-banner card reveal">
+        <div>
+          <span class="badge-ok">Concluído · 2026</span>
+          <h3>Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)</h3>
+          <p class="muted">Centro Universitário das Américas (FAM) · São Paulo, SP</p>
+        </div>
+        <div class="edu-banner__right">
+          <p class="edu-banner__detail">
+            Formação abrangendo Lógica de Programação, Estrutura de Dados, Orientação a Objetos (Java/C#), Linguagens C/C++, Banco de Dados (Oracle/PLSQL/SQL), Engenharia de Software e Projeto Extensionista de Responsabilidade Social.
+          </p>
+          <span class="cert-cta">Ver diploma / certificado da graduação →</span>
+        </div>
+      </a>
+
+      <div class="certs-grid">
+        <a href="certificados.html#cert-postman" class="card cert-item reveal">
+          <span class="cert-meta">Udemy · Nov 2026 · 6.5h</span>
+          <h4>Postman: Testes de API na Prática — Fundamentos Essenciais</h4>
+          <p>APIs RESTful, Swagger, workspaces, collections, variáveis dinâmicas (Faker), Data-Driven (JSON/CSV) e relatórios Newman.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+
+        <a href="certificados.html#cert-ia" class="card cert-item reveal">
+          <span class="cert-meta">Udemy · Nov 2026 · 24.5h</span>
+          <h4>Formação Inteligência Artificial: Do Zero ao Avançado (2026)</h4>
+          <p>Capacitação prática em IA Generativa, automação, agentes inteligentes e produtividade aplicada a engenharia e QA.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+
+        <a href="certificados.html#cert-guia-qa" class="card cert-item reveal">
+          <span class="cert-meta">Udemy · Out 2026 · 4h</span>
+          <h4>Guia em Testes de Software: Teoria e Prática. Plus: ChatGPT</h4>
+          <p>Fundamentos e processos de QA, planejamento e execução de cenários, automação e testes não funcionais.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+
+        <a href="certificados.html#cert-expert-qa" class="card cert-item reveal">
+          <span class="cert-meta">Udemy · Out 2026 · 3h</span>
+          <h4>Teste de Software: Seja um Expert e Impulsione Sua Carreira</h4>
+          <p>Níveis de teste (Unidade, Integração, Sistema, Aceitação, Regressão), Caixa Branca/Preta e gestão de defeitos.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+
+        <a href="certificados.html#cert-iot" class="card cert-item reveal">
+          <span class="cert-meta">Cisco Networking Academy · Mar 2024 · 20h</span>
+          <h4>Introduction to IoT (Internet das Coisas)</h4>
+          <p>Transformação digital, software e dados conectados, automação, redes baseadas em intenção e segurança digital.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+
+        <a href="certificados.html#cert-faculdade" class="card cert-item reveal">
+          <span class="cert-meta">Centro Universitário FAM · 2026</span>
+          <h4>Diploma de Graduação — Análise e Desenvolvimento de Sistemas</h4>
+          <p>Formação superior completa em Engenharia de Software, Bancos de Dados (Oracle/PLSQL/SQL), Programação e Projeto Extensionista.</p>
+          <span class="cert-cta">Ver imagem e resumo completo →</span>
+        </a>
+      </div>
+
+      <div class="certs-footer-cta reveal">
+        <a href="certificados.html" class="btn btn--primary">Abrir Galeria Completa de Certificados →</a>
+      </div>
+    </section>
+
+    <!-- ============ 06. CONTATO ============ -->
+    <section class="section container" id="contato">
+      <div class="contact-card card reveal">
+        <div class="contact-card__left">
+          <span class="kicker">06 // VAMOS CONVERSAR</span>
+          <h2>Pronto para contribuir com a qualidade do seu time</h2>
+          <p>Busco oportunidades como <strong>Analista de QA Júnior</strong>, <strong>QA Tester</strong> ou <strong>Estágio/Trainee em Qualidade e Dados</strong> em São Paulo ou remoto.</p>
+
+          <div class="bug-mini">
+            <button type="button" class="btn btn--sm btn--ghost" id="bug-hunt-btn">
+              🐞 Simular detecção de bug (<span id="bug-counter">0</span>)
+            </button>
+            <span id="bug-msg" class="bug-msg" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <div class="contact-card__right">
+          <a href="https://wa.me/5511925318963?text=Ol%C3%A1%20Juan%20Carlos!%20Vi%20seu%20portf%C3%B3lio%20de%20QA%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" class="contact-row contact-row--highlight">
+            <span>WhatsApp Direto</span>
+            <strong>(11) 92531-8963 · Chamar agora ↗</strong>
+          </a>
+          <a href="curriculo.html" class="contact-row">
+            <span>Currículo Online</span>
+            <strong>Visualizar no navegador (com opção PDF) →</strong>
+          </a>
+          <a href="certificados.html" class="contact-row">
+            <span>Certificações &amp; Diploma</span>
+            <strong>Ver galeria com imagens e resumos →</strong>
+          </a>
+          <a href="mailto:juancornaglia00@gmail.com" class="contact-row">
+            <span>E-mail</span>
+            <strong>juancornaglia00@gmail.com ↗</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/juan-carlos-44854a197/" target="_blank" rel="noopener" class="contact-row">
+            <span>LinkedIn</span>
+            <strong>/in/juan-carlos-44854a197 ↗</strong>
+          </a>
+          <a href="https://github.com/Juancornaglia" target="_blank" rel="noopener" class="contact-row">
+            <span>GitHub</span>
+            <strong>github.com/Juancornaglia ↗</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ LIGHTBOX MODAL ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualização ampliada">
+    <div class="lightbox__backdrop" id="lightbox-close-bg"></div>
+    <div class="lightbox__dialog">
+      <div class="lightbox__bar">
+        <span id="lightbox-caption">Interface Web em Produção</span>
+        <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Fechar">✕</button>
+      </div>
+      <div class="lightbox__body">
+        <img id="lightbox-img" src="assets/img/site_regia.png" alt="Imagem ampliada">
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 <strong>Juan Carlos Zapata Cornaglia</strong> · Analista de Qualidade de Software (QA)</p>
+      <p class="muted">Vila Prudente, São Paulo - SP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
